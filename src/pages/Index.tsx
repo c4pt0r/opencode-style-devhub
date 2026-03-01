@@ -1,11 +1,12 @@
 import { useState } from "react";
 import { Copy, Check } from "lucide-react";
+import Logo from "@/components/Logo";
 
 const Navbar = () => (
   <nav className="border-b border-border">
     <div className="container flex items-center justify-between h-14">
-      <a href="/" className="font-mono font-bold text-lg tracking-tight">
-        db9
+      <a href="/" className="flex items-center">
+        <Logo size={28} />
       </a>
       <div className="hidden md:flex items-center gap-8">
         <a href="#features" className="text-sm text-muted-foreground hover:text-foreground hover-glow transition-colors">Features</a>
@@ -110,7 +111,7 @@ const TerminalSection = () => (
             <div className="w-3 h-3 rounded-full bg-terminal-accent/40" />
             <div className="w-3 h-3 rounded-full bg-terminal-accent/40" />
           </div>
-          <span className="text-xs font-mono text-terminal-accent mx-auto">db9</span>
+          <Logo size={16} className="mx-auto text-terminal-accent" />
         </div>
         <div className="p-5 overflow-x-auto">
           <pre className="text-sm leading-6">
@@ -211,7 +212,7 @@ const CTASection = () => (
 const Footer = () => (
   <footer className="border-t border-border py-8">
     <div className="container max-w-3xl flex items-center justify-between">
-      <span className="text-sm font-mono font-semibold">db9</span>
+      <Logo size={20} />
       <span className="text-xs text-muted-foreground font-sans">© 2025 db9.ai</span>
     </div>
   </footer>
