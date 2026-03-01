@@ -15,7 +15,7 @@ export default {
     extend: {
       fontFamily: {
         mono: ["JetBrains Mono", "monospace"],
-        sans: ["Helvetica Neue", "Helvetica", "Arial", "sans-serif"],
+        sans: ["DM Sans", "sans-serif"],
         display: ["Space Grotesk", "Helvetica Neue", "sans-serif"],
       },
       colors: {
