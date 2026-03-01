@@ -3,24 +3,23 @@ const Logo = ({ className = "", size = 32 }: { className?: string; size?: number
   const w = Math.round(80 * scale);
   const h = Math.round(32 * scale);
 
-  const S = 4; // pixel size
-  const G = 1; // gap
+  const S = 4;
+  const G = 1;
 
-  // Each letter on a 5x7 grid
-  const d = [
-    [1,1,1,0,0],
-    [1,0,0,1,0],
-    [1,0,0,0,1],
-    [1,0,0,0,1],
-    [1,0,0,0,1],
-    [1,0,0,1,0],
-    [1,1,1,0,0],
-  ];
-  const b = [
-    [1,0,0,0,0],
-    [1,0,0,0,0],
+  const D = [
     [1,1,1,1,0],
     [1,0,0,0,1],
+    [1,0,0,0,1],
+    [1,0,0,0,1],
+    [1,0,0,0,1],
+    [1,0,0,0,1],
+    [1,1,1,1,0],
+  ];
+  const B = [
+    [1,1,1,1,0],
+    [1,0,0,0,1],
+    [1,0,0,0,1],
+    [1,1,1,1,0],
     [1,0,0,0,1],
     [1,0,0,0,1],
     [1,1,1,1,0],
@@ -56,7 +55,7 @@ const Logo = ({ className = "", size = 32 }: { className?: string; size?: number
     return rects;
   };
 
-  const stride = 5 * (S + G) + 4; // letter width + spacing
+  const stride = 5 * (S + G) + 4;
 
   return (
     <svg
@@ -66,11 +65,11 @@ const Logo = ({ className = "", size = 32 }: { className?: string; size?: number
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       className={className}
-      aria-label="db9 logo"
+      aria-label="DB9 logo"
     >
       <g transform="translate(4, 1)">
-        {renderGrid(d, 0, 2)}
-        {renderGrid(b, stride, 2)}
+        {renderGrid(D, 0, 2)}
+        {renderGrid(B, stride, 2)}
         {renderGrid(nine, stride * 2, 2)}
       </g>
     </svg>
