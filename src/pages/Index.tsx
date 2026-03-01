@@ -45,7 +45,7 @@ const HeroSection = () => (
   <section className="py-24 md:py-32">
     <div className="container max-w-3xl">
       <h1 className="text-4xl md:text-6xl font-bold tracking-tight leading-[1.1] text-balance font-display">
-        Postgres<br />but <span className="text-muted-foreground">for agents</span><span className="text-pg-blue animate-blink">_</span>
+        Postgres<br />but <span className="text-muted-foreground">for agents</span>
       </h1>
       <p className="mt-6 text-base md:text-lg text-muted-foreground max-w-xl leading-relaxed font-sans">
         Create, manage, and query serverless PostgreSQL databases from your terminal. Branching, migrations, observability, type generation — all built in.
