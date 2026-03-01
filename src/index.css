@@ -99,4 +99,12 @@
     border-color: hsl(0 0% 30%);
     box-shadow: 0 0 24px hsl(0 0% 100% / 0.05);
   }
+
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+  .animate-blink {
+    animation: blink 1s step-end infinite;
+  }
 }
