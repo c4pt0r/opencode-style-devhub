@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -76,5 +76,27 @@
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+
+  .hover-glow {
+    transition: all 0.2s ease;
+  }
+  .hover-glow:hover {
+    text-shadow: 0 0 12px hsl(0 0% 100% / 0.3);
+  }
+
+  .btn-glow {
+    transition: all 0.25s ease;
+  }
+  .btn-glow:hover {
+    box-shadow: 0 0 20px hsl(0 0% 100% / 0.12), 0 0 6px hsl(0 0% 100% / 0.08);
+  }
+
+  .card-glow {
+    transition: all 0.25s ease;
+  }
+  .card-glow:hover {
+    border-color: hsl(0 0% 30%);
+    box-shadow: 0 0 24px hsl(0 0% 100% / 0.05);
   }
 }
