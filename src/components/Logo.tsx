@@ -5,12 +5,11 @@ const Logo = ({ className = "", size = 32 }: { className?: string; size?: number
     <span
       className={`inline-flex items-baseline font-mono tracking-tight ${className}`}
       style={{ fontSize: `${fontSize}px`, lineHeight: 1 }}
-      aria-label="db9 logo"
+      aria-label="DB9 logo"
     >
-      <span className="text-muted-foreground font-normal">&gt;</span>
-      <span className="ml-[0.15em]" />
-      <span className="font-normal text-muted-foreground">d</span>
-      <span className="font-extrabold">b9</span>
+      <span className="text-muted-foreground font-normal">&gt;&gt;</span>
+      <span className="ml-[0.2em]" />
+      <span className="font-extrabold">DB9</span>
     </span>
   );
 };
