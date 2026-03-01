@@ -8,7 +8,7 @@ const Logo = ({ className = "", size = 32 }: { className?: string; size?: number
       aria-label="DB9 logo"
     >
       <span className="font-extrabold">DB</span>
-      <span className="font-extrabold text-pg-blue">9</span>
+      <span className="font-extrabold text-muted-foreground">9</span>
     </span>
   );
 };
