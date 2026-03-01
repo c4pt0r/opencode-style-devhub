@@ -9,7 +9,6 @@ const Logo = ({ className = "", size = 32 }: { className?: string; size?: number
     >
       <span className="font-extrabold">DB</span>
       <span className="font-extrabold text-pg-blue">9</span>
-      <span className="font-normal text-pg-blue/60 animate-blink">_</span>
     </span>
   );
 };
