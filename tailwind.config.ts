@@ -16,6 +16,7 @@ export default {
       fontFamily: {
         mono: ["JetBrains Mono", "monospace"],
         sans: ["Helvetica Neue", "Helvetica", "Arial", "sans-serif"],
+        display: ["Space Grotesk", "Helvetica Neue", "sans-serif"],
       },
       colors: {
         border: "hsl(var(--border))",

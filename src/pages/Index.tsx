@@ -8,12 +8,12 @@ const Navbar = () => (
         db9
       </a>
       <div className="hidden md:flex items-center gap-8">
-        <a href="#features" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Features</a>
-        <a href="#commands" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Commands</a>
-        <a href="https://staging.db9.ai" target="_blank" rel="noopener" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Docs</a>
+        <a href="#features" className="text-sm text-muted-foreground hover:text-foreground hover-glow transition-colors">Features</a>
+        <a href="#commands" className="text-sm text-muted-foreground hover:text-foreground hover-glow transition-colors">Commands</a>
+        <a href="https://staging.db9.ai" target="_blank" rel="noopener" className="text-sm text-muted-foreground hover:text-foreground hover-glow transition-colors">Docs</a>
         <a
           href="#get-started"
-          className="inline-flex items-center justify-center rounded-md bg-primary text-primary-foreground px-4 py-1.5 text-sm font-mono font-medium hover:opacity-90 transition-opacity"
+          className="inline-flex items-center justify-center rounded-md bg-primary text-primary-foreground px-4 py-1.5 text-sm font-mono font-medium btn-glow hover:opacity-90 transition-opacity"
         >
           Get Started
         </a>
@@ -43,7 +43,7 @@ const CopyButton = ({ text }: { text: string }) => {
 const HeroSection = () => (
   <section className="py-24 md:py-32">
     <div className="container max-w-3xl">
-      <h1 className="text-4xl md:text-6xl font-bold tracking-tight leading-[1.1] text-balance">
+      <h1 className="text-4xl md:text-6xl font-bold tracking-tight leading-[1.1] text-balance font-display">
         Postgres<br />but <span className="text-muted-foreground">for agents</span>
       </h1>
       <p className="mt-6 text-base md:text-lg text-muted-foreground max-w-xl leading-relaxed font-sans">
@@ -51,7 +51,7 @@ const HeroSection = () => (
       </p>
 
       <div className="mt-12 grid md:grid-cols-2 gap-4">
-        <div className="border border-border rounded-md p-4">
+        <div className="border border-border rounded-md p-4 card-glow">
           <div className="text-xs font-mono font-semibold tracking-widest uppercase text-muted-foreground mb-3">CLI</div>
           <div className="flex items-center gap-2">
             <code className="text-sm font-mono flex-1 break-all">
@@ -62,7 +62,7 @@ const HeroSection = () => (
           <p className="text-xs text-muted-foreground mt-2 font-sans">macOS / Linux (x86_64, arm64)</p>
         </div>
 
-        <div className="border border-border rounded-md p-4">
+        <div className="border border-border rounded-md p-4 card-glow">
           <div className="text-xs font-mono font-semibold tracking-widest uppercase text-muted-foreground mb-3">AI Agents</div>
           <div className="flex items-center gap-2">
             <code className="text-sm font-mono flex-1 break-all">
@@ -183,7 +183,7 @@ const CommandsSection = () => (
 
       <div className="mt-10 space-y-0 border border-border rounded-md overflow-hidden divide-y divide-border">
         {commands.map((c) => (
-          <div key={c.cmd} className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-6 px-4 py-3 hover:bg-accent/50 transition-colors">
+          <div key={c.cmd} className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-6 px-4 py-3 hover:bg-accent/50 card-glow transition-colors">
             <code className="text-sm font-mono flex-1 min-w-0 truncate">{c.cmd}</code>
             <span className="text-sm text-muted-foreground font-sans shrink-0">{c.desc}</span>
           </div>
